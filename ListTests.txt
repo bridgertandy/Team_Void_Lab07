@@ -26,7 +26,7 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     contains(X) returns false
     isEmpty() returns true
     size() returns 0
-    toString returns "[]"
+    toString() returns "[]"
 2) [] -> addToFront(A) -> [A]
   Tests:
     addToFront(X) throws no Exception
@@ -35,23 +35,30 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     add(X) throws no Exception
     add(-1, X) throws IndexOutOfBoundsException
     add(0, X) throws no Exception
-    add(1, X) throws IndexOutOfBoundsException
-    removeFirst() throws no Exception
-    removeLast() throws Exception
+    add(1, X) throws no Exception
+    add(2, X) throws IndexOutOfBoundsException
+    removeFirst() returns A
+    removeLast() returns A
+    remove(A) returns A
     remove(X) throws NoSuchElementException
     remove(-1) throws IndexOutOfBoundsException
-    remove(0) throws no Exception
+    remove(0) returns A
+    remove(1) throws IndexOutOfBoundsException
     set(-1, X) throws IndexOutOfBoundsException
     set(0, X) throws no Exception
+    set(1, X) throws IndexOutOfBoundsException
     get(-1) throws IndexOutOfBoundsException
     get(0) returns A
+    get(1) throws IndexOutOfBoundsException
+    indexOf(A) returns 0
     indexOf(X) returns -1
     first() returns A
     last() returns A
+    contains(A) returns true
     contains(X) returns false
     isEmpty() returns false
     size() returns 1
-    toString returns "[A]"
+    toString() returns "[A]"
 3) [] -> addToRear(A) -> [A]
   Tests:
     addToFront(X) throws no Exception
@@ -60,23 +67,30 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     add(X) throws no Exception
     add(-1, X) throws IndexOutOfBoundsException
     add(0, X) throws no Exception
-    add(1, X) throws IndexOutOfBoundsException
-    removeFirst() throws no Exception
-    removeLast() throws Exception
+    add(1, X) throws no Exception
+    add(2, X) throws IndexOutOfBoundsException
+    removeFirst() returns A
+    removeLast() returns A
+    remove(A) returns A
     remove(X) throws NoSuchElementException
     remove(-1) throws IndexOutOfBoundsException
-    remove(0) throws no Exception
+    remove(0) returns A
+    remove(1) throws IndexOutOfBoundsException
     set(-1, X) throws IndexOutOfBoundsException
     set(0, X) throws no Exception
+    set(1, X) throws IndexOutOfBoundsException
     get(-1) throws IndexOutOfBoundsException
     get(0) returns A
+    get(1) throws IndexOutOfBoundsException
+    indexOf(A) returns 0
     indexOf(X) returns -1
     first() returns A
     last() returns A
+    contains(A) returns true
     contains(X) returns false
     isEmpty() returns false
     size() returns 1
-    toString returns "[A]"
+    toString() returns "[A]"
 4) [] -> add(A) -> [A]
   Tests:
     addToFront(X) throws no Exception
@@ -85,23 +99,30 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     add(X) throws no Exception
     add(-1, X) throws IndexOutOfBoundsException
     add(0, X) throws no Exception
-    add(1, X) throws IndexOutOfBoundsException
-    removeFirst() throws no Exception
-    removeLast() throws Exception
+    add(1, X) throws no Exception
+    add(2, X) throws IndexOutOfBoundsException
+    removeFirst() returns A
+    removeLast() returns A
+    remove(A) returns A
     remove(X) throws NoSuchElementException
     remove(-1) throws IndexOutOfBoundsException
-    remove(0) throws no Exception
+    remove(0) returns A
+    remove(1) throws IndexOutOfBoundsException
     set(-1, X) throws IndexOutOfBoundsException
     set(0, X) throws no Exception
+    set(1, X) throws IndexOutOfBoundsException
     get(-1) throws IndexOutOfBoundsException
     get(0) returns A
+    get(1) throws IndexOutOfBoundsException
+    indexOf(A) returns 0
     indexOf(X) returns -1
     first() returns A
     last() returns A
+    contains(A) returns true
     contains(X) returns false
     isEmpty() returns false
     size() returns 1
-    toString returns "[A]"
+    toString() returns "[A]"
 5) [] -> add(0,A) -> [A]
   Tests:
     addToFront(X) throws no Exception
@@ -110,23 +131,30 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     add(X) throws no Exception
     add(-1, X) throws IndexOutOfBoundsException
     add(0, X) throws no Exception
-    add(1, X) throws IndexOutOfBoundsException
-    removeFirst() throws no Exception
-    removeLast() throws Exception
+    add(1, X) throws no Exception
+    add(2, X) throws IndexOutOfBoundsException
+    removeFirst() returns A
+    removeLast() returns A
+    remove(A) returns A
     remove(X) throws NoSuchElementException
     remove(-1) throws IndexOutOfBoundsException
-    remove(0) throws no Exception
+    remove(0) returns A
+    remove(1) throws IndexOutOfBoundsException
     set(-1, X) throws IndexOutOfBoundsException
     set(0, X) throws no Exception
+    set(1, X) throws IndexOutOfBoundsException
     get(-1) throws IndexOutOfBoundsException
     get(0) returns A
+    get(1) throws IndexOutOfBoundsException
+    indexOf(A) returns 0
     indexOf(X) returns -1
     first() returns A
     last() returns A
+    contains(A) returns true
     contains(X) returns false
     isEmpty() returns false
     size() returns 1
-    toString returns "[A]"
+    toString() returns "[A]"
 6) [A] -> addToFront(B) -> [B,A]
   Tests:
     addToFront(X) throws no Exceptions
@@ -184,8 +212,8 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     removeFirst() returns A
     removeLast() returns B
     remove(A) returns A
-    remove(B) throws B
-    remove(C) returns NoSuchElementException
+    remove(B) returns B
+    remove(C) throws NoSuchElementException
     remove(-1) throws IndexOutOfBoundsException
     remove(0) returns A
     remove(1) returns B
@@ -237,7 +265,7 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     contains(X) returns false
     isEmpty() returns true
     size() returns 0
-    toString returns "[]"
+    toString() returns "[]"
 13) [A] -> removeLast() -> []
   Tests:
     addToFront(X) throws no Exception
@@ -262,7 +290,7 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     contains(X) returns false
     isEmpty() returns true
     size() returns 0
-    toString returns "[]"
+    toString() returns "[]"
 14) [A] -> remove(A) -> []
   Tests:
     addToFront(X) throws no Exception
@@ -287,7 +315,7 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     contains(X) returns false
     isEmpty() returns true
     size() returns 0
-    toString returns "[]"
+    toString() returns "[]"
 15) [A] -> remove(0) -> []
   Tests:
     addToFront(X) throws no Exception
@@ -312,7 +340,7 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     contains(X) returns false
     isEmpty() returns true
     size() returns 0
-    toString returns "[]"
+    toString() returns "[]"
 16) [A] -> set(0,B) -> [B]
   Tests:
     addToFront(X) throws no Exceptions
@@ -330,12 +358,14 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     remove(B) returns B
     remove(-1) throws IndexOutOfBoundsException
     remove(0) returns B
+    remove(1) throws IndexOutOfBoundsException
     set(-1, X) throws IndexOutOfBoundsException
     set(0, X) throws no Exception
     set(1, X) throws IndexOutOfBoundsException
     get(-1) throws IndexOutOfBoundsException
     get(0) returns B
-    indexOf(B) returns 1
+    get(1) throws IndexOutOfBoundsException
+    indexOf(B) returns 0
     indexOf(X) returns -1
     first() returns B
     last() returns B
@@ -495,12 +525,14 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     remove(B) returns B
     remove(-1) throws IndexOutOfBoundsException
     remove(0) returns B
+    remove(1) throws IndexOutOfBoundsException
     set(-1, X) throws IndexOutOfBoundsException
     set(0, X) throws no Exception
     set(1, X) throws IndexOutOfBoundsException
     get(-1) throws IndexOutOfBoundsException
     get(0) returns B
-    indexOf(B) returns 1
+    get(1) throws IndexOutOfBoundsException
+    indexOf(B) returns 0
     indexOf(X) returns -1
     first() returns B
     last() returns B
@@ -526,12 +558,14 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     remove(B) throws NoSuchElementException
     remove(-1) throws IndexOutOfBoundsException
     remove(0) returns A
+    remove(1) throws IndexOutOfBoundsException
     set(-1, X) throws IndexOutOfBoundsException
     set(0, X) throws no Exception
     set(1, X) throws IndexOutOfBoundsException
     get(-1) throws IndexOutOfBoundsException
     get(0) returns A
-    indexOf(A) returns 1
+    get(1) throws IndexOutOfBoundsException
+    indexOf(A) returns 0
     indexOf(X) returns -1
     first() returns A
     last() returns A
@@ -539,7 +573,7 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
     contains(X) returns false
     isEmpty() returns false
     size() returns 1
-    toString() returns "[B]"
+    toString() returns "[A]"
 27) [A,B] -> remove(A) -> [B]
 28) [A,B] -> remove(B) -> [A]
 29) [A,B] -> remove(0) -> [B]
@@ -597,4 +631,3 @@ Define tests for the 22 change scenarios, in addition to the 3 given as examples
 41) [A,B,C] -> set(0,D) -> [D,B,C]
 42) [A,B,C] -> set(1,D) -> [A,D,C]
 43) [A,B,C] -> set(2,D) -> [A,B,D]
-
